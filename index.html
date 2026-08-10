@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dubai Chewy Cookie — chewy cookie premium dengan sensasi cokelat Dubai.">
+  <title>Dubai Chewy Cookie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">Dubai<span>Chewy</span></a>
+    <nav class="nav">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#menu" data-i18n="navMenu">Menu</a>
+      <a href="#story" data-i18n="navStory">Our Story</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="language">
+        <button class="lang-btn active" data-lang="id">ID</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Shopping cart">🛒<span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">THE DUBAI CHOCOLATE EXPERIENCE</p>
+        <h1 data-i18n="heroTitle">Chewy, rich,<br><em>unforgettable.</em></h1>
+        <p class="hero-text" data-i18n="heroText">Gigitan lembut dengan cokelat premium dan sentuhan Dubai yang bikin susah berhenti.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary" data-i18n="shopNow">Shop Cookies</a>
+          <a href="#story" class="btn btn-ghost" data-i18n="discover">Discover our story →</a>
+        </div>
+        <div class="trust">
+          <span>★★★★★</span>
+          <p><strong>4.9/5</strong> <span data-i18n="reviewText">dari pecinta cookie</span></p>
+        </div>
+      </div>
+
+      <div class="hero-slider">
+        <div class="slider-track" id="sliderTrack">
+          <article class="slide active">
+            <div class="cookie-art cookie-1"><span>🍪</span></div>
+            <div class="slide-label"><small>01 / 05</small><strong>Dubai Pistachio</strong><span>Chocolate • Pistachio • Kataifi</span></div>
+          </article>
+          <article class="slide">
+            <div class="cookie-art cookie-2"><span>🍪</span></div>
+            <div class="slide-label"><small>02 / 05</small><strong>Dark Dubai</strong><span>Dark Chocolate • Sea Salt</span></div>
+          </article>
+          <article class="slide">
+            <div class="cookie-art cookie-3"><span>🍪</span></div>
+            <div class="slide-label"><small>03 / 05</small><strong>Milk Dubai</strong><span>Milk Chocolate • Hazelnut</span></div>
+          </article>
+          <article class="slide">
+            <div class="cookie-art cookie-4"><span>🍪</span></div>
+            <div class="slide-label"><small>04 / 05</small><strong>Pistachio Dream</strong><span>Pistachio • White Chocolate</span></div>
+          </article>
+          <article class="slide">
+            <div class="cookie-art cookie-5"><span>🍪</span></div>
+            <div class="slide-label"><small>05 / 05</small><strong>Dubai Crunch</strong><span>Chocolate • Kataifi • Almond</span></div>
+          </article>
+        </div>
+        <div class="slider-controls">
+          <button id="prevBtn">←</button>
+          <div class="dots" id="dots"></div>
+          <button id="nextBtn">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <span>DUBAI CHOCOLATE</span><b>✦</b><span>CHEWY COOKIE</span><b>✦</b><span>PREMIUM TREATS</span><b>✦</b><span>DUBAI CHOCOLATE</span><b>✦</b>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="ourMenu">OUR MENU</p>
+          <h2 data-i18n="menuTitle">Pick your<br><em>favorite bite.</em></h2>
+        </div>
+        <p data-i18n="menuText">Dibuat fresh dengan tekstur chewy, bagian tengah lumer, dan rasa cokelat yang bold.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-name="Dubai Pistachio" data-price="28000">
+          <div class="product-image cookie-1"><span>🍪</span><b>BEST SELLER</b></div>
+          <div class="product-info"><div><h3>Dubai Pistachio</h3><p>Chocolate · Pistachio · Kataifi</p></div><strong>Rp28K</strong></div>
+          <button class="add-cart" data-i18n="addCart">+ Add to cart</button>
+        </article>
+        <article class="product-card" data-name="Dark Dubai" data-price="30000">
+          <div class="product-image cookie-2"><span>🍪</span></div>
+          <div class="product-info"><div><h3>Dark Dubai</h3><p>Dark Chocolate · Sea Salt</p></div><strong>Rp30K</strong></div>
+          <button class="add-cart" data-i18n="addCart">+ Add to cart</button>
+        </article>
+        <article class="product-card" data-name="Milk Dubai" data-price="27000">
+          <div class="product-image cookie-3"><span>🍪</span></div>
+          <div class="product-info"><div><h3>Milk Dubai</h3><p>Milk Chocolate · Hazelnut</p></div><strong>Rp27K</strong></div>
+          <button class="add-cart" data-i18n="addCart">+ Add to cart</button>
+        </article>
+        <article class="product-card" data-name="Pistachio Dream" data-price="29000">
+          <div class="product-image cookie-4"><span>🍪</span></div>
+          <div class="product-info"><div><h3>Pistachio Dream</h3><p>Pistachio · White Chocolate</p></div><strong>Rp29K</strong></div>
+          <button class="add-cart" data-i18n="addCart">+ Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-card">
+        <p class="eyebrow">WHY DUBAI CHEWY?</p>
+        <h2 data-i18n="storyTitle">A little luxury<br><em>in every bite.</em></h2>
+        <p data-i18n="storyText">Terinspirasi dari tren cokelat Dubai, kami memadukan cookie chewy dengan pistachio cream, cokelat premium, dan crunchy kataifi. Hasilnya? Mewah, creamy, dan tetap fun.</p>
+        <a href="#menu" class="text-link" data-i18n="tryNow">Try the collection →</a>
+      </div>
+      <div class="story-visual"><span>🍫</span><small>DUBAI<br>CHOCOLATE</small></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div><a href="#home" class="logo">Dubai<span>Chewy</span></a><p data-i18n="footerText">Little cookies. Big chocolate energy.</p></div>
+    <p>© 2026 Dubai Chewy Cookie</p>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-box">
+      <button id="closeSearch">×</button>
+      <p class="eyebrow" data-i18n="searchLabel">SEARCH</p>
+      <input id="searchInput" type="search" placeholder="Cari cookie..." data-placeholder-id="Cari cookie..." data-placeholder-en="Search cookies...">
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-head"><h2 data-i18n="cartTitle">Your Cart</h2><button id="closeCart">×</button></div>
+    <div id="cartItems"><p class="empty" data-i18n="emptyCart">Keranjang masih kosong.</p></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">Rp0</strong></div>
+    <a class="btn btn-primary checkout" id="checkoutBtn" href="#" target="_blank" data-i18n="checkout">Pesan via WhatsApp</a>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <a class="wa-float" href="https://wa.me/6282282208520?text=hallo%2C%20kak%20aku%20mau%20pesan%20dubai%20chewy%20cookie%20nya%205%20ya%20kak." target="_blank" aria-label="Chat WhatsApp">
+    <span>☏</span><small>Chat us</small>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
