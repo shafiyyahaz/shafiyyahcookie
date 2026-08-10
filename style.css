@@ -112,5 +112,6 @@ footer{background:var(--deep);color:#cbdad0;padding:45px 8vw;display:flex;justif
 .product-card:hover .product-image img{transform:scale(1.06)}
 .cookie-art:before,.product-image:before{display:none}
 
-/* Cover photo supplied by the user */
-.hero-slider .slide:first-child .cookie-art img{object-position:center center;}
+/* Hero cover photo */
+.hero-slider .cookie-art img { object-position: center; }
+.hero-slider .cookie-art.cookie-1 img { object-position: center 48%; }
