@@ -115,3 +115,18 @@ footer{background:var(--deep);color:#cbdad0;padding:45px 8vw;display:flex;justif
 /* Hero cover photo */
 .hero-slider .cookie-art img { object-position: center; }
 .hero-slider .cookie-art.cookie-1 img { object-position: center 48%; }
+
+/* Revised photo treatment: each menu item uses a different real food photograph. */
+.product-image img,
+.cookie-art img{object-fit:cover;object-position:center}
+.product-image.cookie-2 img{object-position:center 52%}
+.product-image.cookie-3 img{object-position:center 50%}
+.product-image.cookie-4 img{object-position:center 48%}
+.cookie-art.cookie-2 img{object-position:center 52%}
+.cookie-art.cookie-3 img{object-position:center 50%}
+.cookie-art.cookie-4 img{object-position:center 48%}
+.cookie-art.cookie-5 img{object-position:center 50%}
+
+/* Prevent broken-image icon from ever taking over the card. */
+.product-image,
+.cookie-art{background:#e8eee9}

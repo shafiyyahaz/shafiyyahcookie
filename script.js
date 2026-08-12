@@ -40,7 +40,7 @@ function renderSearch(){
 }
 searchInput.addEventListener('input',renderSearch);
 
-let cart=[];
+let cart=JSON.parse(localStorage.getItem('dubaiChewyCart')||'[]');
 const cartPanel=document.getElementById('cartPanel'), backdrop=document.getElementById('backdrop');
 function openCart(){cartPanel.classList.add('open');backdrop.classList.add('open');}
 function closeCart(){cartPanel.classList.remove('open');backdrop.classList.remove('open');}
@@ -58,6 +58,7 @@ document.querySelectorAll('.add-cart').forEach(btn=>{
   };
 });
 function updateCart(){
+  localStorage.setItem('dubaiChewyCart', JSON.stringify(cart));
   const count=cart.reduce((sum,x)=>sum+x.qty,0);
   document.getElementById('cartCount').textContent=count;
   const items=document.getElementById('cartItems');
@@ -83,7 +84,7 @@ function setLang(lang){
   searchInput.placeholder=searchInput.dataset['placeholder'+(lang==='id'?'Id':'En')];
 }
 document.querySelectorAll('.lang-btn').forEach(btn=>btn.onclick=()=>setLang(btn.dataset.lang));
-setLang('id');
+setLang('id');\nupdateCart();
 
 document.getElementById('menuBtn').onclick=()=>{
   const nav=document.querySelector('.nav');
