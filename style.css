@@ -104,3 +104,51 @@ footer{background:var(--deep);color:#cbdad0;padding:48px 8vw;display:flex;justif
 @media(max-width:560px){
   .header{padding:0 5vw}.header-actions{gap:3px}.hero{padding-top:45px}.hero h1{font-size:52px}.section-heading{display:block}.section-heading h2{font-size:45px;margin-bottom:18px}.product-grid{grid-template-columns:1fr 1fr;gap:10px}.product-image{height:180px}.product-info{display:block;padding:14px 7px}.product-info>strong{display:block;margin-top:8px}.story h2{font-size:45px}footer{display:block}footer>p{margin-top:25px}.wa-float{right:18px;bottom:18px}.hero-features span{font-size:8px;padding:6px 8px}
 }
+
+/* REAL FOOD HERO OVERRIDE */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(248,245,235,.97) 0%, rgba(248,245,235,.78) 43%, rgba(18,59,43,.12) 100%),
+    url('https://images.pexels.com/photos/32421566/pexels-photo-32421566.jpeg?auto=compress&cs=tinysrgb&w=2000') center center / cover no-repeat !important;
+  min-height: 680px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 76% 25%, rgba(215,177,105,.30), transparent 25%),
+    radial-gradient(circle at 20% 80%, rgba(91,139,108,.20), transparent 32%);
+  pointer-events: none;
+}
+.hero > * { position: relative; z-index: 1; }
+
+.photo-collage {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 14px;
+  margin-top: 28px;
+}
+.photo-collage img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(18,59,43,.18);
+  border: 5px solid rgba(255,255,255,.78);
+}
+.photo-collage img:first-child {
+  grid-row: span 2;
+  height: 394px;
+}
+.product-card img, .gallery img {
+  object-fit: cover !important;
+  filter: saturate(1.05) contrast(1.03);
+}
+@media (max-width: 760px) {
+  .hero { min-height: 620px; background-position: 62% center !important; }
+  .photo-collage { grid-template-columns: 1fr; }
+  .photo-collage img:first-child { grid-row: auto; height: 260px; }
+}

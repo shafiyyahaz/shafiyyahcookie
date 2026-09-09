@@ -1,15 +1,14 @@
-# Real food photography used by the website
+# Real food photography sources
 
-The website uses real food photographs hosted by Pexels. The Pexels pages below
-identify the photographs and indicate that they are free to use.
+The refreshed design uses real food photographs from Pexels as photographic stock references.
+The Pexels search results identify these images as free to use:
 
-- Chocolate pistachio cookie close-up: https://www.pexels.com/photo/delicious-chocolate-pistachio-cookie-with-a-bite-36124248/ 
-- Chocolate cookies with pistachio garnish: https://www.pexels.com/photo/chocolate-cookies-with-pistachio-garnish-on-tray-37331090/
-- Pistachio cookies: https://www.pexels.com/photo/cookies-with-pistachio-17255894/
-- Pistachio cookies with chocolate chips: https://www.pexels.com/photo/close-up-photo-of-cookies-with-chocolate-chips-11127418/
-- Chocolate cookie photography: https://www.pexels.com/photo/close-up-of-chocolate-cookies-9620158/
-- Pistachio cookies with latte art: https://www.pexels.com/photo/delicious-pistachio-cookies-with-latte-art-35368449/
+- Matcha/pistachio chocolate cookies: https://www.pexels.com/photo/delicious-matcha-chocolate-chip-cookies-32421566/
+- Chocolate chip cookies on dark surface: https://www.pexels.com/photo/chocolate-chip-cookies-on-flat-surface-9712236/
+- Freshly baked chocolate cookies on tray: https://www.pexels.com/photo/chocolate-cookies-in-metal-tray-13681418/
+- Chocolate cookies, top view: https://www.pexels.com/photo/top-view-of-chocolate-cookies-on-plate-37353910/
+- Close-up chocolate chip cookies: https://www.pexels.com/photo/a-close-up-shot-of-chocolate-chip-cookies-14133096/
+- Luxury chocolate dessert with pistachio garnish: https://www.pexels.com/photo/chocolate-dessert-with-artistic-plates-display-36963966/
+- Assorted cookies in a box: https://www.pexels.com/photo/box-with-variety-of-cookies-17517693/
 
-The website does not claim these stock photographs are ShafiyyahCookie's own
-products. For a commercial launch, replace the stock photos with photographs
-of the actual products to avoid confusing customers.
+For a final commercial launch, replace stock images with photographs of the actual ShafiyyahCookie products.
