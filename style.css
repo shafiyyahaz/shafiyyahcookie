@@ -130,3 +130,7 @@ footer{background:var(--deep);color:#cbdad0;padding:45px 8vw;display:flex;justif
 /* Prevent broken-image icon from ever taking over the card. */
 .product-image,
 .cookie-art{background:#e8eee9}
+
+
+/* Favicon / browser theme */
+:focus-visible{outline:2px solid var(--green);outline-offset:3px}
