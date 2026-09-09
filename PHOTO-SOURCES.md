@@ -1,15 +1,15 @@
-# Photo sources used in the revised site
+# Real food photography used by the website
 
-The website uses distinct real food photographs from Pexels. The photo URLs are used directly in the HTML so GitHub Pages can load them without needing extra image files.
+The website uses real food photographs hosted by Pexels. The Pexels pages below
+identify the photographs and indicate that they are free to use.
 
-- Dubai Pistachio — Pexels: https://www.pexels.com/photo/chocolate-cookies-with-pistachio-garnish-on-tray-37331090/
-- Dark Dubai — Pexels: https://www.pexels.com/photo/close-up-shot-of-chocolate-cookies-6449392/
-- Milk Dubai — Pexels: https://www.pexels.com/photo/two-baked-cookies-6719/
-- Pistachio Dream — Pexels: https://www.pexels.com/photo/close-up-of-sweet-cakes-19993433/
-- Dubai Crunch — Pexels: https://www.pexels.com/photo/delicious-chocolate-pistachio-cookie-with-a-bite-36124248/
+- Chocolate pistachio cookie close-up: https://www.pexels.com/photo/delicious-chocolate-pistachio-cookie-with-a-bite-36124248/ 
+- Chocolate cookies with pistachio garnish: https://www.pexels.com/photo/chocolate-cookies-with-pistachio-garnish-on-tray-37331090/
+- Pistachio cookies: https://www.pexels.com/photo/cookies-with-pistachio-17255894/
+- Pistachio cookies with chocolate chips: https://www.pexels.com/photo/close-up-photo-of-cookies-with-chocolate-chips-11127418/
+- Chocolate cookie photography: https://www.pexels.com/photo/close-up-of-chocolate-cookies-9620158/
+- Pistachio cookies with latte art: https://www.pexels.com/photo/delicious-pistachio-cookies-with-latte-art-35368449/
 
-All image cards also have a local fallback to `dubai-chewy-hero.jpg` so a temporary remote-image failure does not show a broken-image icon.
-
-
-### Dark Dubai image
-The Dark Dubai product/hero image was replaced with a larger, realistic food-product visual (`dark-dubai-realistic.jpg`) for a more prominent presentation.
+The website does not claim these stock photographs are ShafiyyahCookie's own
+products. For a commercial launch, replace the stock photos with photographs
+of the actual products to avoid confusing customers.
