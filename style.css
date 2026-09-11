@@ -145,3 +145,28 @@ footer{background:var(--deep);color:#cbdad0;padding:45px 8vw;display:flex;justif
   object-position: center;
   display: block;
 }
+
+/* Cover hero: gunakan foto cookie sebagai background penuh, tanpa mengubah konten cover */
+.hero{
+  position:relative;
+  display:block;
+  min-height:650px;
+  padding:120px 8vw 110px;
+  background-image:url('hero-cookie-background.jpg');
+  background-size:cover;
+  background-position:center right;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(247,245,238,.94) 0%,rgba(247,245,238,.78) 38%,rgba(247,245,238,.18) 68%,rgba(18,59,43,.08) 100%);
+  z-index:0;
+}
+.hero-copy{position:relative;z-index:2;max-width:560px}
+.hero-slider{display:none}
+@media(max-width:900px){
+  .hero{padding:70px 6vw 90px;background-position:65% center}
+  .hero::before{background:linear-gradient(180deg,rgba(247,245,238,.94) 0%,rgba(247,245,238,.76) 55%,rgba(247,245,238,.28) 100%)}
+}
