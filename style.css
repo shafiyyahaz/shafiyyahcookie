@@ -80,7 +80,7 @@ h1 em,h2 em{font-family:'Playfair Display',serif;font-weight:600}
 
 .story{display:grid;grid-template-columns:1.2fr .8fr;margin:0 8vw 100px;border-radius:30px;overflow:hidden;background:var(--mint)}
 .story-card{padding:70px 8vw 70px 70px}.story h2{font-size:53px;margin-bottom:25px}.story-card>p:not(.eyebrow){max-width:540px;color:#536c5e;line-height:1.8;font-size:13px;margin-bottom:25px}.text-link{font-weight:700;font-size:12px;color:var(--dark)}
-.story-visual{background:var(--dark);color:white;display:grid;place-items:center;position:relative;min-height:380px;overflow:hidden}.story-visual img{width:100%;height:100%;min-height:380px;object-fit:cover;object-position:center;display:block}.story-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,39,29,.58),rgba(8,39,29,0) 45%);pointer-events:none}.story-visual small{position:absolute;z-index:1;bottom:28px;left:30px;letter-spacing:4px;font-size:9px;line-height:1.7}
+.story-visual{background:var(--dark);color:white;display:grid;place-items:center;position:relative;min-height:380px}.story-visual span{font-size:120px;filter:drop-shadow(0 25px 15px #0005)}.story-visual small{position:absolute;bottom:28px;left:30px;letter-spacing:4px;font-size:9px;line-height:1.7}
 
 footer{background:var(--deep);color:#cbdad0;padding:45px 8vw;display:flex;justify-content:space-between;align-items:end;font-size:11px}footer .logo{color:white}footer p{margin-top:8px;color:#91a89b}
 
@@ -99,49 +99,42 @@ footer{background:var(--deep);color:#cbdad0;padding:45px 8vw;display:flex;justif
 @media(max-width:560px){
   .header{padding:0 5vw}.header-actions{gap:3px}.hero h1{font-size:52px}.section-heading{display:block}.section-heading h2{font-size:45px;margin-bottom:18px}.product-grid{grid-template-columns:1fr 1fr;gap:10px}.product-image{height:180px}.product-image span{font-size:55px}.product-info{display:block;padding:14px 7px}.product-info>strong{display:block;margin-top:8px}.story h2{font-size:45px}footer{display:block}footer>p{margin-top:25px}.wa-float{right:18px;bottom:18px}}
 
-/* Real cookie photography */
-.cookie-art img,
-.product-image img{
+
+/* Only requested change: aesthetic cookie photo as the cover background */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background-image:url('hero-cookie-background.jpg');
+  background-size:cover;
+  background-position:center right;
+}
+.hero::before{
+  content:"";
   position:absolute;
   inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
+  background:linear-gradient(90deg,rgba(247,245,238,.96) 0%,rgba(247,245,238,.88) 34%,rgba(247,245,238,.42) 58%,rgba(247,245,238,.08) 100%);
+  z-index:0;
+  pointer-events:none;
 }
-.cookie-art img{transition:transform .6s ease}
-.slide.active .cookie-art img{transform:scale(1.03)}
-.product-image img{transition:transform .35s ease}
-.product-card:hover .product-image img{transform:scale(1.06)}
-.cookie-art:before,.product-image:before{display:none}
+.hero-copy{position:relative;z-index:2}
+.hero-slider{position:relative;z-index:1;visibility:hidden}
 
-/* Hero cover photo */
-.hero-slider .cookie-art img { object-position: center; }
-.hero-slider .cookie-art.cookie-1 img { object-position: center 48%; }
-
-/* Revised photo treatment: each menu item uses a different real food photograph. */
-.product-image img,
-.cookie-art img{object-fit:cover;object-position:center}
-.product-image.cookie-2 img{object-position:center 52%}
-.product-image.cookie-3 img{object-position:center 50%}
-.product-image.cookie-4 img{object-position:center 48%}
-.cookie-art.cookie-2 img{object-position:center 52%}
-.cookie-art.cookie-3 img{object-position:center 50%}
-.cookie-art.cookie-4 img{object-position:center 48%}
-.cookie-art.cookie-5 img{object-position:center 50%}
-
-/* Prevent broken-image icon from ever taking over the card. */
-.product-image,
-.cookie-art{background:#e8eee9}
-
-/* Luxury hero image update */
-.luxury-hero-image, .why-hero-image, .feature-hero-image {
-  overflow: hidden;
+@media(max-width:900px){
+  .hero{background-position:68% center}
+  .hero::before{background:linear-gradient(180deg,rgba(247,245,238,.96) 0%,rgba(247,245,238,.84) 52%,rgba(247,245,238,.30) 100%)}
 }
-.luxury-hero-image img, .why-hero-image img, .feature-hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+
+
+/* WHY DUBAI CHEWY — compact, balanced photo section */
+.story{grid-template-columns:1fr 1fr;max-width:1100px;margin-left:auto;margin-right:auto;min-height:380px;}
+.story-card{padding:58px 62px;}
+.story h2{font-size:50px;line-height:1.02;}
+.story-visual{height:380px;min-height:0;position:relative;overflow:hidden;}
+.story-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
+.story-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.28) 100%);pointer-events:none;}
+.story-visual small{z-index:2;}
+@media(max-width:900px){
+  .story{grid-template-columns:1fr;margin-left:6vw;margin-right:6vw;min-height:0;}
+  .story-card{padding:50px 35px;}
+  .story-visual{height:280px;}
 }
