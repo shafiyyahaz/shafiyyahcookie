@@ -1,14 +1,15 @@
-# Real food photography sources
+# Photo sources used in the revised site
 
-The refreshed design uses real food photographs from Pexels as photographic stock references.
-The Pexels search results identify these images as free to use:
+The website uses distinct real food photographs from Pexels. The photo URLs are used directly in the HTML so GitHub Pages can load them without needing extra image files.
 
-- Matcha/pistachio chocolate cookies: https://www.pexels.com/photo/delicious-matcha-chocolate-chip-cookies-32421566/
-- Chocolate chip cookies on dark surface: https://www.pexels.com/photo/chocolate-chip-cookies-on-flat-surface-9712236/
-- Freshly baked chocolate cookies on tray: https://www.pexels.com/photo/chocolate-cookies-in-metal-tray-13681418/
-- Chocolate cookies, top view: https://www.pexels.com/photo/top-view-of-chocolate-cookies-on-plate-37353910/
-- Close-up chocolate chip cookies: https://www.pexels.com/photo/a-close-up-shot-of-chocolate-chip-cookies-14133096/
-- Luxury chocolate dessert with pistachio garnish: https://www.pexels.com/photo/chocolate-dessert-with-artistic-plates-display-36963966/
-- Assorted cookies in a box: https://www.pexels.com/photo/box-with-variety-of-cookies-17517693/
+- Dubai Pistachio — Pexels: https://www.pexels.com/photo/chocolate-cookies-with-pistachio-garnish-on-tray-37331090/
+- Dark Dubai — Pexels: https://www.pexels.com/photo/close-up-shot-of-chocolate-cookies-6449392/
+- Milk Dubai — Pexels: https://www.pexels.com/photo/two-baked-cookies-6719/
+- Pistachio Dream — Pexels: https://www.pexels.com/photo/close-up-of-sweet-cakes-19993433/
+- Dubai Crunch — Pexels: https://www.pexels.com/photo/delicious-chocolate-pistachio-cookie-with-a-bite-36124248/
 
-For a final commercial launch, replace stock images with photographs of the actual ShafiyyahCookie products.
+All image cards also have a local fallback to `dubai-chewy-hero.jpg` so a temporary remote-image failure does not show a broken-image icon.
+
+
+### Dark Dubai image
+The Dark Dubai product/hero image was replaced with a larger, realistic food-product visual (`dark-dubai-realistic.jpg`) for a more prominent presentation.
